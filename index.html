@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para Rojita la dueña de mi corazon y pilin.</strong>
+                        <p>
+                            Querida Cristi de un autor muy elocuente 
+                            escribo esta carta con el fin, 
+                            de quedar como un demente muy inprudente
+                            o que ames mas a este parlanchin,
+                            por eso quiero saber si este 14 quisieras ser mi valentin.
+                            <br><br>
+                           <div class="envelope"> ATT: Tu Novio que te ama mucho.</div>
+                        <div class="envelope-gif">
+                         <center>  <img src="gif/michi2.gif" class="gif">   </center>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+            <div class="envelope-a">
+                            <a href="si.html">si</a>
+                            <a href="no1.html">no</a>
+                          </div>
+
+        </div>
+
+    </div>
+            
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
